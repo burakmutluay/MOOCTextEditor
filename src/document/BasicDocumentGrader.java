@@ -26,7 +26,7 @@ public class BasicDocumentGrader {
             System.out.println("\nFlesch scores:");
             br.close();
 
-            br = new BufferedReader(new FileReader("test_cases/mod1TestCases.txt"));
+            br = new BufferedReader(new FileReader("test_cases/mod2TestCases.txt"));
             out = new PrintWriter("grader_output/module1.part2.out", "utf-8");
             while ((line = br.readLine()) != null)
             {

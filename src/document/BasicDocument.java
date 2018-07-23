@@ -34,7 +34,6 @@ public class BasicDocument extends Document
 	@Override
 	public int getNumWords()
 	{
-		//TODO: Implement this method in week 2 according to the comments above.  
 		// See the Module 2 support videos if you need help.
 		List<String> words = getTokens("[a-zA-Z]+");
 
@@ -56,9 +55,8 @@ public class BasicDocument extends Document
 	@Override
 	public int getNumSentences()
 	{
-	    //TODO: Implement this method.  See the Module 2 support videos 
         // if you need help.
-		List<String> tokens = getTokens("[^!?.]+");
+		List<String> tokens = getTokens("([^!?.]+(.[0-9]+)?)+");
         return tokens.size();
 	}
 	
@@ -88,8 +86,6 @@ public class BasicDocument extends Document
 		int totalSyllables = 0;
 		for (String word:words ) {
 			totalSyllables+=countSyllables(word);
-
-
 		}
 		return totalSyllables;
 	}
@@ -121,6 +117,7 @@ public class BasicDocument extends Document
 		testCase(new BasicDocument("Sentences?!"), 3, 1, 1);
 		testCase(new BasicDocument("Lorem ipsum dolor sit amet, qui ex choro quodsi moderatius, nam dolores explicari forensibus ad."),
 		         32, 15, 1);
+		testCase(new BasicDocument("test case. for 7.7 or 7.9."), 4,4,2);
 	}
-	
+
 }
