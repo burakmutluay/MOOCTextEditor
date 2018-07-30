@@ -60,9 +60,6 @@ public class EfficientDocument extends Document {
 				numWord++;
 				numSyl += countSyllables(token);
 				inSentence = true;
-				if (tokens.indexOf(token)==(tokens.size()-1)){
-					numSent+=1;
-				}
 			}else if(inSentence){
 				inSentence = false;
 				numSent++;
