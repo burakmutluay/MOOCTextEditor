@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-121.57291666666674" y="145.0">document.EfficientDocument</node>
+    <node x="-555.0" y="408.0">document.BasicDocumentGrader</node>
+    <node x="-464.61458333333337" y="169.0">document.BasicDocument</node>
+    <node x="-345.5625" y="-154.0">document.Document</node>
+    <node x="5.0" y="408.0">document.EfficientDocumentGrader</node>
+    <node x="-332.0" y="396.0">document.DocumentBenchmarking</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="document.BasicDocument" target="document.Document">
+      <point x="0.0" y="-76.5" />
+      <point x="-348.61458333333337" y="120.0" />
+      <point x="-258.8125" y="120.0" />
+      <point x="-86.75" y="124.5" />
+    </edge>
+    <edge source="document.DocumentBenchmarking" target="document.EfficientDocument">
+      <point x="118.875" y="-39.5" />
+      <point x="-54.625" y="371.0" />
+      <point x="-25.947916666666742" y="371.0" />
+      <point x="-31.875" y="100.5" />
+    </edge>
+    <edge source="document.EfficientDocument" target="document.Document">
+      <point x="0.0" y="-100.5" />
+      <point x="5.9270833333332575" y="120.0" />
+      <point x="-85.3125" y="120.0" />
+      <point x="86.75" y="124.5" />
+    </edge>
+    <edge source="document.BasicDocumentGrader" target="document.BasicDocument">
+      <point x="-50.75" y="-27.5" />
+      <point x="-504.25" y="371.0" />
+      <point x="-435.61458333333337" y="371.0" />
+      <point x="-87.0" y="76.5" />
+    </edge>
+    <edge source="document.EfficientDocumentGrader" target="document.EfficientDocument">
+      <point x="-56.5" y="-27.5" />
+      <point x="61.5" y="371.0" />
+      <point x="37.80208333333326" y="371.0" />
+      <point x="31.875" y="100.5" />
+    </edge>
+    <edge source="document.DocumentBenchmarking" target="document.BasicDocument">
+      <point x="-118.875" y="-39.5" />
+      <point x="-292.375" y="371.0" />
+      <point x="-319.61458333333337" y="371.0" />
+      <point x="29.0" y="76.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8" x="-111.52380952380963" y="127.38095238095241" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
